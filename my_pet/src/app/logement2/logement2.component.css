@@ -1,0 +1,124 @@
+
+#housing {
+    width: 115px;
+    height: 150px;
+    margin-left: 40px;
+  }
+
+main{
+    min-height: 695px;
+}
+
+#eddel{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size:13px;
+  font-weight: 600;
+  border: none;
+}
+
+#ed, #del {
+  background-color: #f0e3da;
+  border-radius: 15px;
+  color: #785306;
+
+}
+
+#ed:hover,#del:hover{
+  background-color: #ddd3cc;
+  border-radius: 15px;
+}
+
+#text1 {
+    color: #eb651c;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 130px;
+    float: left;
+  }
+
+  #ttt{
+    margin-top: 90px;
+  }
+
+  .cell {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 317.33px;
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cell:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cell h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #eb651c;
+  }
+  
+  .cell p {
+    font-size: 1rem;
+    color: #785306;
+    margin-bottom: -20px;
+
+  }
+
+  .cell p strong {
+    font-size: 1.05rem;
+    color: #2260c9;
+    margin-bottom: -20px;
+  }
+
+
+  .container2 {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .cell-button {
+    position:relative;
+    top: -140px;
+    right: -140px;
+    border: none;
+    background-color: #eb651c;
+  }
+
+  #b1 {
+    display: inline-block;
+    background-color: #f0e3da;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #eb651c;
+    border: 2px solid #999;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px; 
+  }
+    
+  #b1:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

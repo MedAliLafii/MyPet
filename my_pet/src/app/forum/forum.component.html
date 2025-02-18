@@ -1,0 +1,32 @@
+<body>
+  <app-header></app-header>
+  <main>
+      <div id="textsearch">
+          <h1 style="color: #eb651c;font-size: 55px;font-weight: 600;margin-left: 100px;">Online Help</h1>
+          <form action="#" method="get">
+            <input type="text" name="search" [(ngModel)]="searchTerm" placeholder="Search for items...">
+            <button type="submit" (click)="searchForumData($event)">Search</button>
+        </form>
+      </div>
+      <div class="container" id="card-container">
+        <div class="item" *ngFor="let row of filteredForumData; let i = index">
+          <div id="border">
+            <a (click)="openForumDetails(row)" class="item-link">
+              <div class="item-content">
+                  <h2>{{ row.TitleQ }}</h2>
+                  <p>{{ row.TextQ }}</p>
+              </div>
+              <div class="item-user">
+                  <span class="item-user-name">{{ row.Users_UsernameU }}</span>
+              </div>
+          </a>
+          </div>
+          <div *ngIf="i === filteredForumData.length - 1" id="load-more-container">
+              <button id="load-more" *ngIf="noMoreItemsToShow" (click)="seeMore()">See More</button>
+          </div>
+        </div>
+      </div>          
+  </main>
+  <br><br>
+  <app-footer></app-footer>
+</body>

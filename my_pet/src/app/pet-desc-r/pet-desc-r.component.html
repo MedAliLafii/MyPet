@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="image">
+    <img src="http://localhost/mypet/{{ row.PhotoR }}" alt="Image">
+  </div>
+  <div class="details">
+    <h2>{{ row.NameR }}</h2>
+    <p class="label">Description:</p>
+    <p class="description">{{ row.TextR }}</p>
+    <p class="label">Last Seen:</p>
+    <p class="lseen">{{ row.LSeenR }}</p>
+    <p class="label">Phone Number:</p>
+    <p class="phone">{{ row.Users_PhoneU }}</p>
+  </div>
+  <button class="remove-btn" (click)="openRemovePet(row.idReport)">Remove Pet</button>
+</div>

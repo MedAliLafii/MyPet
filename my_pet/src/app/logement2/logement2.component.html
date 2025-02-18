@@ -1,0 +1,35 @@
+<body>
+  <app-header></app-header>
+    <main>
+      <div class="container">
+          <div class="row">
+              <h1 class="col-3" id="text1">Pet sitters<br> in {{ selectedValue }}:</h1>
+              <div class="col-4 offset-5" id="ttt">
+              <img src="assets/logement_a/housing.png" alt="Housing" id="housing"><br>
+              <a (click)="AddPetSitter()" id="b1">Add Pet Sitter</a>
+              </div>
+              
+          </div>
+      </div>
+      <div class="container2">
+          <div class="row">
+            <div class="col-4" *ngFor="let row of housingData">
+              <div class="cell">
+                  <h2>{{ row.NameH }}</h2>
+                  <p><br><strong>Adress: </strong>{{ row.AddressH }}</p>
+                  <p><br><strong>Phone: </strong>{{ row.PhoneH }}</p>
+                  <p><br><strong>Email: </strong>{{ row.EmailH }}</p>
+                  <div id="eddel">
+                    <button class="dropdown-item" id="ed" (click)="editHousing(row.idHousing)">Edit</button>
+                    <button class="dropdown-item" id="del" (click)="deleteHousing(row.idHousing)">Delete</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <br><br>
+    <app-footer></app-footer>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  

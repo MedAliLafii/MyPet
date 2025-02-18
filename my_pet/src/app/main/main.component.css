@@ -1,0 +1,145 @@
+
+
+  #text1 {
+    color: #eb651c;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 220px;
+    margin-left: -270px;
+    float: left;
+  }
+
+  #text2 {
+    color: #eb651c;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 180px;
+    margin-left: 0px;
+    float: left;
+  }
+
+  #text3 {
+    color: #eb651c;
+    font-size: 35px;
+    font-weight: 600;
+    font-style:oblique;
+    text-align: center;
+    margin-top: 160px;
+    margin-left: -100px;
+  }
+
+ #dog{
+    width: 277px;
+    height: 358px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin-right: 230px;
+    margin-top: 100px;
+ }
+ 
+  
+  main {
+    padding-left: 160px;
+  }
+  .col-3 {
+    float: left; 
+  }
+  
+  .review-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .reviewer-image {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .reviewer-name {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #ccc;
+  }
+  
+  .review-text {
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: justify;
+    color: #ccc;
+  }
+
+  #dog2 {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    background-color: #123879 !important; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #eb651c !important; 
+    font-weight: 600;
+
+  }
+  
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-weight: 600;
+
+  }
+  
+  .donate-btn {
+    background-color: #eb651c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+  }
+  
+  .donate-btn:hover {
+    background-color: #eb651c;
+  }
+  

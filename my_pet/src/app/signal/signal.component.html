@@ -1,0 +1,30 @@
+<body>
+    <app-header></app-header>
+    <main>
+        <div id="textsearch">
+            <h1 style="color: #eb651c;font-size: 55px;font-weight: 600;margin-left: 100px;">Reports</h1>
+            <form action="#" method="get" (submit)="searchSignalData($event)">
+                <input type="text" name="search" [(ngModel)]="searchTerm" placeholder="Search for items...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="item col-4" *ngFor="let row of filteredSignalData">
+                    <div class="item-image">
+                        <img src="http://localhost/mypet/{{ row.PhotoR }}" alt="Photo">
+                    </div>
+                    <div class="item-details">
+                        <h2>{{row.NameR}}</h2>
+                        <p>{{row.TextR}}</p>
+                        <span class="item-date">Last seen: {{ row.LSeenR }}</span>
+                        <a class="item-btn" (click)="openSignalDetails(row)">See details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <app-footer></app-footer>
+</body>

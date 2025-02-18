@@ -1,0 +1,46 @@
+<body>
+    <app-header></app-header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <img class="col-4" src="assets/logement_a/fmr.png" alt="FMR" id="FMR">
+                <div class="right col-5 offset-2">
+                  <img src="assets/logement_a/housing.png" style="height: 300px;width: 231px;" alt="Image"><br><br>
+                  <h1 style="color: #eb651c; font-size: 100px;">Housing</h1>
+                  <p style="font-size: 25px;">Because Finding a good pet sitter shouldn't <br> be a hassle. With MyPet It's as easy as...</p>
+                  <div class="input-container" id="select">
+                    <select name="region_accueil" id="region" [(ngModel)]="selectedValue" (change)="redirectToLogement2()">
+                      <option value="" disabled selected>Region</option>
+                      <option value="Tunis">Tunis</option>
+                      <option value="Ariana">Ariana</option>
+                      <option value="Ben Arous">Ben Arous</option>
+                      <option value="Manouba">Manouba</option>
+                      <option value="Nabeul">Nabeul</option>
+                      <option value="Zaghouan">Zaghouan</option>
+                      <option value="Bizerte">Bizerte</option>
+                      <option value="Beja">Béja</option>
+                      <option value="Jendouba">Jendouba</option>
+                      <option value="Kef">Kef</option>
+                      <option value="Siliana">Siliana</option>
+                      <option value="Sousse">Sousse</option>
+                      <option value="Monastir">Monastir</option>
+                      <option value="Mahdia">Mahdia</option>
+                      <option value="Sfax">Sfax</option>
+                      <option value="Kairouan">Kairouan</option>
+                      <option value="Kasserine">Kasserine</option>
+                      <option value="Sidi Bouzid">Sidi Bouzid</option>
+                      <option value="Gabes">Gabès</option>
+                      <option value="Medenine">Médenine</option>
+                      <option value="Tataouine">Tataouine</option>
+                      <option value="Tozeur">Tozeur</option>
+                      <option value="Kebili">Kébili</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <app-footer></app-footer>
+    <script src="js/bootstrap.min.js"></script>
+  </body>

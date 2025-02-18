@@ -1,0 +1,26 @@
+<body>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="input-container">
+      <label for="name">Name</label>
+      <input type="text" formControlName="NameH" placeholder="Name">
+    </div>
+    <div class="input-container">
+      <label for="region">Region</label>
+      <input type="text" formControlName="RegionH" placeholder="Region" readonly>
+    </div>
+    <div class="input-container">
+      <label for="phone">Phone Number</label>
+      <input type="tel" formControlName="PhoneH" placeholder="Phone Number">
+    </div>
+    <div class="input-container">
+      <label for="email">Email</label>
+      <input type="email" formControlName="EmailH" placeholder="Email">
+    </div>
+    <div class="input-container">
+      <label for="address">Address</label>
+      <textarea formControlName="AddressH" placeholder="Address" rows="4"></textarea>
+    </div>
+    <button id="b11" type="submit">Submit</button>
+  </form>  
+</body>
+  

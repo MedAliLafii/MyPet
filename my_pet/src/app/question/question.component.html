@@ -1,0 +1,24 @@
+<body>
+      <main>
+        <div class="topic-container">
+            <article class="topic">
+                <div>
+                    <span class="user-name">{{ row.Users_UsernameU }}</span>
+                </div>
+                <h1>{{ row.TitleQ }}</h1>
+                <p>{{ row.TextQ }}</p>
+                <button class="delete-button" (click)="deleteQuestion(row.idQuestion)">Delete Topic</button>
+            </article>
+            <div class="replies-container">
+                <article class="reply" *ngFor="let comment of comments">
+                    <div>
+                        <span class="user-name">{{ comment.Users_UsernameU }}</span>
+                    </div>
+                    <p>{{ comment.TextC }}</p>
+                    <button class="delete-button" (click)="deleteComment(comment.idComment)">Delete Reply</button>
+                </article>
+            </div>
+        </div>
+      </main>
+    <script src="js/bootstrap.min.js"></script>
+</body>
